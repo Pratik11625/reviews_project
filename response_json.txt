@@ -1,0 +1,24 @@
+
+
+--- New Search Results ---
+```json
+{
+  "sentiment": "NEUTRAL",
+  "theme": ["forts", "history", "capital cities"]
+}
+```
+
+
+--- New Search Results ---
+```json
+{
+  "sentiment": "POSITIVE",
+  "theme": [
+    "Travel experience",
+    "Local advice",
+    "Seasonal considerations",
+    "Food recommendations",
+    "Safety precautions"
+  ]
+}
+```
