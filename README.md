@@ -1,4 +1,4 @@
 ﻿# reviews_project
-Sentiment & Theme Extraction from Product Reviews,
+Sentiment & Theme Extraction from  Reviews,
 The project aims to analyze customer reviews, extract sentiment (Positive, Negative, Neutral), 
-and identify key themes discussed (e.g., product issues, packaging problems, quality concerns). The extracted insights are structured in JSON format for easy downstream processing.
+and identify key themes discussed. The extracted insights are structured in JSON format for easy downstream processing.
