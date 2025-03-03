@@ -37,6 +37,18 @@ st.title("Review Sentiment & Theme Analyzer")
 
 review_text = st.text_area("Enter a review:")
 
+def review_txt_file(results_data, txt_file="review.txt"):
+        with open(txt_file, 'a', encoding='utf-8') as file:  # Use 'a' to append to the file instead of 'w'
+            file.write("\n\n--- New Search Results ---\n")
+            file.write(str(results_data) + "\n")
+
+review_txt_file(review_text)
+
+def response_json_file(results_data, txt_file="response_json.txt"):
+        with open(txt_file, 'a', encoding='utf-8') as file:  # Use 'a' to append to the file instead of 'w'
+            file.write("\n\n--- New Search Results ---\n")
+            file.write(str(results_data) + "\n")
+
 if st.button("Analyze Review"):
     with st.spinner("Wait for it..."):
         time.sleep(5)
@@ -51,6 +63,8 @@ if st.button("Analyze Review"):
             # st.success(response.content)
             st.write(response.content)
             # st.json(response)
+
+            response_json_file(response.content)
 
         else:
             st.error("Please enter a review before analyzing.")
